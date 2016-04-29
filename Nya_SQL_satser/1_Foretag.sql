@@ -1,0 +1,29 @@
+USE [NewtonCompDB]
+GO
+
+/****** Object:  Table [dbo].[Foretag]    Script Date: 2015-06-14 20:25:57 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+SET ANSI_PADDING ON
+GO
+
+CREATE TABLE [dbo].[Foretag](
+	[ForetagsNr] [char](20) NOT NULL,
+	[FName] [varchar](20) NULL,
+	[FAdress] [varchar](50) NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[ForetagsNr] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+
+SET ANSI_PADDING OFF
+GO
+
+

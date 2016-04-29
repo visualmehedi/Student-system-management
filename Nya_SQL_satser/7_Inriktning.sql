@@ -1,0 +1,28 @@
+USE [NewtonCompDB]
+GO
+
+/****** Object:  Table [dbo].[Inriktning]    Script Date: 2015-06-14 20:26:00 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+SET ANSI_PADDING ON
+GO
+
+CREATE TABLE [dbo].[Inriktning](
+	[InriktningsNr] [char](20) NOT NULL,
+	[InriktningsNamn] [char](20) NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[InriktningsNr] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+
+SET ANSI_PADDING OFF
+GO
+
+
